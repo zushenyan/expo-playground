@@ -1,1 +1,1 @@
-export { default } from "./src/RootNavigator";
+export { default } from "./src";

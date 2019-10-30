@@ -3,15 +3,9 @@ import {
   NavigationStackScreenComponent,
   NavigationStackOptions
 } from "react-navigation-stack";
-import { Container, Text } from "native-base";
+import Dashboard from "../../components/layouts/Dashboard";
 
-const DashboardScreen: NavigationStackScreenComponent = () => {
-  return (
-    <Container>
-      <Text>I am Dashboard Screen</Text>
-    </Container>
-  );
-};
+const DashboardScreen: NavigationStackScreenComponent = () => <Dashboard />;
 
 DashboardScreen.navigationOptions = (): NavigationStackOptions => ({
   headerTitle: "Dashboard"

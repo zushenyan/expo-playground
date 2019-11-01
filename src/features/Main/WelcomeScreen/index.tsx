@@ -3,8 +3,8 @@ import {
   NavigationStackScreenComponent,
   NavigationStackOptions
 } from "react-navigation-stack";
-import Routes from "../../constants/routes";
-import Welcome from "../../components/layouts/Welcome";
+import Routes from "@/constants/routes";
+import Welcome from "@/components/layouts/Welcome";
 
 const WelcomeScreen: NavigationStackScreenComponent = ({ navigation }) => (
   <Welcome

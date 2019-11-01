@@ -2,26 +2,29 @@ import React from "react";
 import { Container, Content, Form, Button, Text } from "native-base";
 import { Formik, Field } from "formik";
 import * as Yup from "yup";
-import CustomInput from "../../inputs/CustomInput";
+import CustomInput from "@/components/inputs/CustomInput";
 
 const validationSchema = Yup.object({
   email: Yup.string()
-    .email("invalid email format")
-    .required("required"),
+    .email("Invalid email format")
+    .required("Required"),
   password: Yup.string()
-    .min(6, "password length should be at least 6 characters")
-    .required("required")
+    .min(6, "Password length should be at least 6 characters")
+    .required("Required")
 });
 
 type Props = {
-  onSubmit(): void;
+  isSubmitting: boolean;
+  onSubmit(values, actions): void;
 };
 
-const SignInScreen: React.FC<Props> = ({ onSubmit }: Props) => {
+const SignInScreen: React.FC<Props> = ({ isSubmitting, onSubmit }: Props) => {
   return (
     <Container>
-      <Text>Please fill out the following info to proceed</Text>
-      <Content>
+      <Text style={{ textAlign: "center", marginVertical: 10 }}>
+        Please fill out the following info to proceed
+      </Text>
+      <Content style={{ position: "relative" }} padder>
         <Formik
           initialValues={{ email: "", password: "" }}
           validationSchema={validationSchema}
@@ -31,8 +34,12 @@ const SignInScreen: React.FC<Props> = ({ onSubmit }: Props) => {
             <Form>
               <Field name="email" component={CustomInput} label="Email" />
               <Field name="password" component={CustomInput} label="Password" />
-              <Button onPress={handleSubmit}>
-                <Text>Continue</Text>
+              <Button
+                style={{ justifyContent: "center", marginVertical: 10 }}
+                onPress={handleSubmit}
+                disabled={isSubmitting}
+              >
+                <Text>{isSubmitting ? "Submitting..." : "Submit"}</Text>
               </Button>
             </Form>
           )}

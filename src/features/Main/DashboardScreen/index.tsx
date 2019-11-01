@@ -3,7 +3,7 @@ import {
   NavigationStackScreenComponent,
   NavigationStackOptions
 } from "react-navigation-stack";
-import Dashboard from "../../components/layouts/Dashboard";
+import Dashboard from "@/components/layouts/Dashboard";
 
 const DashboardScreen: NavigationStackScreenComponent = () => <Dashboard />;
 

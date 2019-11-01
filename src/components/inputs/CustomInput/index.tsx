@@ -1,5 +1,5 @@
 import React from "react";
-import { Item, Label, Input, Text } from "native-base";
+import { Content, Item, Label, Input, Text } from "native-base";
 import { ErrorMessage, FieldProps } from "formik";
 
 type Props = FieldProps & {
@@ -8,17 +8,19 @@ type Props = FieldProps & {
 
 const CustomInput: React.FC<Props> = ({ label, field, form }) => {
   return (
-    <Item>
-      <Label>{label}</Label>
-      <Input
-        {...field}
-        onChangeText={form.handleChange(field.name)}
-        onBlur={form.handleBlur(field.name)}
-      />
-      <Text>
+    <Content>
+      <Item stackedLabel>
+        <Label>{label}</Label>
+        <Input
+          {...field}
+          onChangeText={form.handleChange(field.name)}
+          onBlur={form.handleBlur(field.name)}
+        />
+      </Item>
+      <Text style={{ color: "red", height: 20 }}>
         <ErrorMessage name={field.name} />
       </Text>
-    </Item>
+    </Content>
   );
 };
 

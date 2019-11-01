@@ -1,24 +1,13 @@
-import { createSlice, PayloadAction } from "redux-starter-kit";
+import { combineReducers } from "redux-starter-kit";
 
-interface State {
-  email: string;
-}
+import { default as userSlice } from "@/features/services/user/slice";
+import { default as signInSlice } from "@/features/Main/SignInScreen/slice";
 
-const initialState: State = {
-  email: ""
-};
-
-const slice = createSlice({
-  name: "user",
-  initialState,
-  reducers: {
-    setEmail: (state, action: PayloadAction<string>): State => ({
-      ...state,
-      email: action.payload
-    })
-  }
+const rootReducer = combineReducers({
+  user: userSlice.reducer,
+  signIn: signInSlice.reducer
 });
 
-export default {
-  user: slice.reducer
-};
+export type RootState = ReturnType<typeof rootReducer>;
+
+export default rootReducer;

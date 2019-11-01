@@ -1,11 +1,10 @@
-import Routes from "./constants/routes";
-
-import WelcomeScreen from "./features/WelcomeScreen";
-import DashboardScreen from "./features/DashboardScreen";
-import SignInScreen from "./features/SignInScreen";
-
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
+
+import Routes from "./constants/routes";
+import WelcomeScreen from "./features/Main/WelcomeScreen";
+import DashboardScreen from "./features/Main/DashboardScreen";
+import SignInScreen from "./features/Main/SignInScreen";
 
 const MainNavigator = createStackNavigator(
   {

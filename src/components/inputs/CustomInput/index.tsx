@@ -6,13 +6,20 @@ type Props = FieldProps & {
   label: string;
 };
 
-const CustomInput: React.FC<Props> = ({ label, field, form }) => {
+const CustomInput: React.FC<Props> = ({
+  label,
+  field,
+  form,
+  meta, // eslint-disable-line
+  ...props
+}) => {
   return (
     <Content>
       <Item stackedLabel>
         <Label>{label}</Label>
         <Input
           {...field}
+          {...props}
           onChangeText={form.handleChange(field.name)}
           onBlur={form.handleBlur(field.name)}
         />

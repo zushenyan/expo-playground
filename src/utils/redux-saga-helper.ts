@@ -1,7 +1,7 @@
 import { takeLatest } from "redux-saga/effects";
 import { createAction, ActionCreator, AnyAction } from "redux-starter-kit";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// eslint-disable-next-line
 export type Fn = (...args: any[]) => any;
 
 export type SagaAction<T> = { [key in keyof T]: ActionCreator<AnyAction> };

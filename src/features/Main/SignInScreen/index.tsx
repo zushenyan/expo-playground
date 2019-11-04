@@ -7,17 +7,23 @@ import {
 import SignIn from "@/components/layouts/SignIn";
 import { getIsSubmitting } from "./selector";
 import sagaSlice from "./saga";
+import { validationSchema } from "./validation";
 
 const SignInScreen: NavigationStackScreenComponent = () => {
   const dispatch = useDispatch();
 
   const isSubmitting = useSelector(getIsSubmitting);
 
-  const onSubmit = (values, actions): void => {
-    dispatch(sagaSlice.actions.submit({ values, actions }));
-  };
-
-  return <SignIn onSubmit={onSubmit} isSubmitting={isSubmitting} />;
+  return (
+    <SignIn
+      initialValues={{ email: "", password: "" }}
+      validationSchema={validationSchema}
+      onSubmit={(values): void => {
+        dispatch(sagaSlice.actions.submit(values));
+      }}
+      isSubmitting={isSubmitting}
+    />
+  );
 };
 
 SignInScreen.navigationOptions = (): NavigationStackOptions => ({

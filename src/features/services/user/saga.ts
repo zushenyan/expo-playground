@@ -1,12 +1,16 @@
+import { PayloadAction } from "redux-starter-kit";
 import { put, call } from "redux-saga/effects";
 import { createSagaSlice } from "@/utils/redux-saga-helper";
 import { signIn as signInAPI, UserResponse } from "./api";
 import slice from "./slice";
 
-function* signIn({ payload }): Generator {
-  const { email, error }: UserResponse = yield call(signInAPI, {
-    email: payload
-  });
+export type SignInPayload = {
+  email: string;
+  password: string;
+};
+
+function* signIn(action: PayloadAction<SignInPayload>): Generator {
+  const { email, error }: UserResponse = yield call(signInAPI, action.payload);
   if (email) {
     yield put(slice.actions.setEmail(email));
   } else {
@@ -14,9 +18,11 @@ function* signIn({ payload }): Generator {
   }
 }
 
-export default createSagaSlice({
+const sagas = {
+  signIn
+};
+
+export default createSagaSlice<typeof sagas>({
   name: "user/saga",
-  sagas: {
-    signIn
-  }
+  sagas
 });

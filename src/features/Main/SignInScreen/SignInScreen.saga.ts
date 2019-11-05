@@ -3,13 +3,13 @@ import { put, call } from "redux-saga/effects";
 import { NavigationActions } from "react-navigation";
 import { createSagaSlice } from "@/utils/redux-saga-helper";
 import { dispatch } from "@/utils/navigator";
-import userSagaSlice from "@/features/services/user/saga";
+import { saga as userSaga } from "@/services/user";
 import routes from "@/constants/routes";
-import slice from "./slice";
+import slice from "./SignInScreen.slice";
 
 function* submit(action: PayloadAction): Generator {
   yield put(slice.actions.setIsSubmitting(true));
-  yield call(userSagaSlice.sagas.signIn, action);
+  yield call(userSaga.sagas.signIn, action);
   yield call(
     dispatch,
     NavigationActions.navigate({ routeName: routes.DashboardScreen })
@@ -22,7 +22,7 @@ const sagas = {
 };
 
 export default createSagaSlice<typeof sagas>({
-  name: "SignInScreen",
+  name: "features/Main/SignInScreen/saga",
   sagas: {
     submit
   }

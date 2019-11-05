@@ -9,7 +9,7 @@ export const initialState = {
 };
 
 export default createSlice({
-  name: "features/SignInScreen",
+  name: "features/Main/SignInScreen/slice",
   initialState,
   reducers: {
     setIsSubmitting: (state, action: PayloadAction<boolean>): State => ({

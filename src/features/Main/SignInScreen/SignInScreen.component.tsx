@@ -5,9 +5,9 @@ import {
   NavigationStackOptions
 } from "react-navigation-stack";
 import SignIn from "@/components/layouts/SignIn";
-import { getIsSubmitting } from "./selector";
-import sagaSlice from "./saga";
-import { validationSchema } from "./validation";
+import { getIsSubmitting } from "./SignInScreen.selector";
+import saga from "./SignInScreen.saga";
+import { validationSchema } from "./SignInScreen.validation";
 
 const SignInScreen: NavigationStackScreenComponent = () => {
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ const SignInScreen: NavigationStackScreenComponent = () => {
       initialValues={{ email: "", password: "" }}
       validationSchema={validationSchema}
       onSubmit={(values): void => {
-        dispatch(sagaSlice.actions.submit(values));
+        dispatch(saga.actions.submit(values));
       }}
       isSubmitting={isSubmitting}
     />

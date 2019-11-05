@@ -11,7 +11,7 @@ export const initialState: State = {
 };
 
 const slice = createSlice({
-  name: "user",
+  name: "services/user/slice",
   initialState,
   reducers: {
     setEmail: (state, action: PayloadAction<string>): State => ({

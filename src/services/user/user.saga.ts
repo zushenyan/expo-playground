@@ -1,8 +1,8 @@
 import { PayloadAction } from "redux-starter-kit";
 import { put, call } from "redux-saga/effects";
 import { createSagaSlice } from "@/utils/redux-saga-helper";
-import { signIn as signInAPI, UserResponse } from "./api";
-import slice from "./slice";
+import { signIn as signInAPI, UserResponse } from "./user.api";
+import slice from "./user.slice";
 
 export type SignInPayload = {
   email: string;
@@ -23,6 +23,6 @@ const sagas = {
 };
 
 export default createSagaSlice<typeof sagas>({
-  name: "user/saga",
+  name: "services/user/saga",
   sagas
 });

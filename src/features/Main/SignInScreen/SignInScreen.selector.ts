@@ -1,9 +1,8 @@
 import { createSelector } from "redux-starter-kit";
-import { RootState } from "@/store/rootReducer";
-import { State } from "./slice";
+import { RootState } from "@/store/root-reducer";
 
 export const getSignInScreen = createSelector(
-  (s: RootState): State => s.signIn,
+  (s: RootState) => s.signIn,
   v => v
 );
 

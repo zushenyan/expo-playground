@@ -1,11 +1,11 @@
-export interface SignInArguments {
+export type SignInArguments = {
   email: string;
-}
+};
 
-export interface UserResponse {
+export type UserResponse = {
   email?: string;
   error?: string;
-}
+};
 
 export const signIn = async ({
   email

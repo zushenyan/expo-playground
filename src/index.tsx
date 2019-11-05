@@ -1,6 +1,6 @@
 import React from "react";
 import { Provider } from "react-redux";
-import RootNavigator from "@/RootNavigator";
+import RootNavigator from "@/root-navigation";
 import store from "@/store";
 import { setTopLevelNavigator } from "@/utils/navigator";
 

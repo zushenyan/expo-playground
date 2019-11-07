@@ -1,0 +1,857 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignIn initial props 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "height": 1334,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#000",
+          "fontFamily": "System",
+          "fontSize": 16,
+        },
+        Object {
+          "marginVertical": 10,
+          "textAlign": "center",
+        },
+      ]
+    }
+    uppercase={false}
+  >
+    Please fill out the following info to proceed
+  </Text>
+  <RCTScrollView
+    automaticallyAdjustContentInsets={false}
+    contentContainerStyle={
+      Array [
+        Object {
+          "padding": 10,
+        },
+        undefined,
+      ]
+    }
+    contentInset={
+      Object {
+        "bottom": 0,
+      }
+    }
+    enableAutomaticScroll={true}
+    enableOnAndroid={false}
+    enableResetScrollToCoords={true}
+    extraHeight={75}
+    extraScrollHeight={0}
+    getScrollResponder={[Function]}
+    handleOnScroll={[Function]}
+    keyboardDismissMode="interactive"
+    keyboardOpeningTime={250}
+    keyboardShouldPersistTaps="handled"
+    keyboardSpace={0}
+    onScroll={[Function]}
+    padder={true}
+    resetKeyboardSpace={[Function]}
+    resetScrollToCoords={
+      Object {
+        "x": 0,
+        "y": 0,
+      }
+    }
+    scrollEventThrottle={1}
+    scrollForExtraHeightOnAndroid={[Function]}
+    scrollIntoView={[Function]}
+    scrollToEnd={[Function]}
+    scrollToFocusedInput={[Function]}
+    scrollToPosition={[Function]}
+    showsVerticalScrollIndicator={true}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "flex": 1,
+        },
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+    update={[Function]}
+    viewIsInsideTabBar={false}
+  >
+    <View>
+      <View
+        style={Object {}}
+      >
+        <RCTScrollView
+          automaticallyAdjustContentInsets={false}
+          contentContainerStyle={
+            Array [
+              Object {
+                "padding": undefined,
+              },
+              undefined,
+            ]
+          }
+          contentInset={
+            Object {
+              "bottom": 0,
+            }
+          }
+          enableAutomaticScroll={true}
+          enableOnAndroid={false}
+          enableResetScrollToCoords={true}
+          extraHeight={75}
+          extraScrollHeight={0}
+          getScrollResponder={[Function]}
+          handleOnScroll={[Function]}
+          keyboardDismissMode="interactive"
+          keyboardOpeningTime={250}
+          keyboardShouldPersistTaps="handled"
+          keyboardSpace={0}
+          onScroll={[Function]}
+          resetKeyboardSpace={[Function]}
+          resetScrollToCoords={
+            Object {
+              "x": 0,
+              "y": 0,
+            }
+          }
+          scrollEventThrottle={1}
+          scrollForExtraHeightOnAndroid={[Function]}
+          scrollIntoView={[Function]}
+          scrollToEnd={[Function]}
+          scrollToFocusedInput={[Function]}
+          scrollToPosition={[Function]}
+          showsVerticalScrollIndicator={true}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "flex": 1,
+            }
+          }
+          update={[Function]}
+          viewIsInsideTabBar={false}
+        >
+          <View>
+            <View
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRadius": undefined,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": undefined,
+                  "flexDirection": null,
+                  "marginLeft": 2,
+                  "minHeight": 65,
+                  "opacity": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "alignSelf": "flex-start",
+                    "color": "#575757",
+                    "fontSize": 15,
+                    "left": null,
+                    "paddingRight": 5,
+                    "paddingTop": 5,
+                    "position": null,
+                    "right": null,
+                    "top": null,
+                  }
+                }
+              >
+                Email
+              </Text>
+              <TextInput
+                allowFontScaling={true}
+                editable={true}
+                name="email"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onChangeText={[Function]}
+                placeholderTextColor="#575757"
+                rejectResponderTermination={true}
+                style={
+                  Object {
+                    "alignSelf": "stretch",
+                    "color": "#000",
+                    "flex": 1,
+                    "fontSize": 17,
+                    "height": 50,
+                    "lineHeight": 18,
+                    "paddingLeft": 5,
+                    "paddingRight": 5,
+                    "top": 1.5,
+                    "width": null,
+                  }
+                }
+                underlineColorAndroid="rgba(0,0,0,0)"
+                value="foo"
+              />
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  },
+                  Object {
+                    "color": "red",
+                    "height": 20,
+                  },
+                ]
+              }
+              uppercase={false}
+            />
+          </View>
+        </RCTScrollView>
+        <RCTScrollView
+          automaticallyAdjustContentInsets={false}
+          contentContainerStyle={
+            Array [
+              Object {
+                "padding": undefined,
+              },
+              undefined,
+            ]
+          }
+          contentInset={
+            Object {
+              "bottom": 0,
+            }
+          }
+          enableAutomaticScroll={true}
+          enableOnAndroid={false}
+          enableResetScrollToCoords={true}
+          extraHeight={75}
+          extraScrollHeight={0}
+          getScrollResponder={[Function]}
+          handleOnScroll={[Function]}
+          keyboardDismissMode="interactive"
+          keyboardOpeningTime={250}
+          keyboardShouldPersistTaps="handled"
+          keyboardSpace={0}
+          onScroll={[Function]}
+          resetKeyboardSpace={[Function]}
+          resetScrollToCoords={
+            Object {
+              "x": 0,
+              "y": 0,
+            }
+          }
+          scrollEventThrottle={1}
+          scrollForExtraHeightOnAndroid={[Function]}
+          scrollIntoView={[Function]}
+          scrollToEnd={[Function]}
+          scrollToFocusedInput={[Function]}
+          scrollToPosition={[Function]}
+          showsVerticalScrollIndicator={true}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "flex": 1,
+            }
+          }
+          update={[Function]}
+          viewIsInsideTabBar={false}
+        >
+          <View>
+            <View
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRadius": undefined,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": undefined,
+                  "flexDirection": null,
+                  "marginLeft": 2,
+                  "minHeight": 65,
+                  "opacity": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "alignSelf": "flex-start",
+                    "color": "#575757",
+                    "fontSize": 15,
+                    "left": null,
+                    "paddingRight": 5,
+                    "paddingTop": 5,
+                    "position": null,
+                    "right": null,
+                    "top": null,
+                  }
+                }
+              >
+                Password
+              </Text>
+              <TextInput
+                allowFontScaling={true}
+                editable={true}
+                name="password"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onChangeText={[Function]}
+                placeholderTextColor="#575757"
+                rejectResponderTermination={true}
+                secureTextEntry={true}
+                style={
+                  Object {
+                    "alignSelf": "stretch",
+                    "color": "#000",
+                    "flex": 1,
+                    "fontSize": 17,
+                    "height": 50,
+                    "lineHeight": 18,
+                    "paddingLeft": 5,
+                    "paddingRight": 5,
+                    "top": 1.5,
+                    "width": null,
+                  }
+                }
+                underlineColorAndroid="rgba(0,0,0,0)"
+                value="bar"
+              />
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  },
+                  Object {
+                    "color": "red",
+                    "height": 20,
+                  },
+                ]
+              }
+              uppercase={false}
+            />
+          </View>
+        </RCTScrollView>
+        <View
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#007aff",
+              "borderBottomWidth": null,
+              "borderColor": "#007aff",
+              "borderLeftWidth": null,
+              "borderRadius": 5,
+              "borderRightWidth": null,
+              "borderTopWidth": null,
+              "borderWidth": undefined,
+              "elevation": 2,
+              "flexDirection": "row",
+              "height": 45,
+              "justifyContent": "center",
+              "marginVertical": 10,
+              "opacity": 1,
+              "paddingBottom": 6,
+              "paddingTop": 6,
+              "shadowColor": undefined,
+              "shadowOffset": undefined,
+              "shadowOpacity": undefined,
+              "shadowRadius": undefined,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#fff",
+                "fontFamily": "System",
+                "fontSize": 16.5,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+              }
+            }
+            uppercase={false}
+          >
+            Submit
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`SignIn isSubmitting = true 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "height": 1334,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#000",
+          "fontFamily": "System",
+          "fontSize": 16,
+        },
+        Object {
+          "marginVertical": 10,
+          "textAlign": "center",
+        },
+      ]
+    }
+    uppercase={false}
+  >
+    Please fill out the following info to proceed
+  </Text>
+  <RCTScrollView
+    automaticallyAdjustContentInsets={false}
+    contentContainerStyle={
+      Array [
+        Object {
+          "padding": 10,
+        },
+        undefined,
+      ]
+    }
+    contentInset={
+      Object {
+        "bottom": 0,
+      }
+    }
+    enableAutomaticScroll={true}
+    enableOnAndroid={false}
+    enableResetScrollToCoords={true}
+    extraHeight={75}
+    extraScrollHeight={0}
+    getScrollResponder={[Function]}
+    handleOnScroll={[Function]}
+    keyboardDismissMode="interactive"
+    keyboardOpeningTime={250}
+    keyboardShouldPersistTaps="handled"
+    keyboardSpace={0}
+    onScroll={[Function]}
+    padder={true}
+    resetKeyboardSpace={[Function]}
+    resetScrollToCoords={
+      Object {
+        "x": 0,
+        "y": 0,
+      }
+    }
+    scrollEventThrottle={1}
+    scrollForExtraHeightOnAndroid={[Function]}
+    scrollIntoView={[Function]}
+    scrollToEnd={[Function]}
+    scrollToFocusedInput={[Function]}
+    scrollToPosition={[Function]}
+    showsVerticalScrollIndicator={true}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "flex": 1,
+        },
+        Object {
+          "position": "relative",
+        },
+      ]
+    }
+    update={[Function]}
+    viewIsInsideTabBar={false}
+  >
+    <View>
+      <View
+        style={Object {}}
+      >
+        <RCTScrollView
+          automaticallyAdjustContentInsets={false}
+          contentContainerStyle={
+            Array [
+              Object {
+                "padding": undefined,
+              },
+              undefined,
+            ]
+          }
+          contentInset={
+            Object {
+              "bottom": 0,
+            }
+          }
+          enableAutomaticScroll={true}
+          enableOnAndroid={false}
+          enableResetScrollToCoords={true}
+          extraHeight={75}
+          extraScrollHeight={0}
+          getScrollResponder={[Function]}
+          handleOnScroll={[Function]}
+          keyboardDismissMode="interactive"
+          keyboardOpeningTime={250}
+          keyboardShouldPersistTaps="handled"
+          keyboardSpace={0}
+          onScroll={[Function]}
+          resetKeyboardSpace={[Function]}
+          resetScrollToCoords={
+            Object {
+              "x": 0,
+              "y": 0,
+            }
+          }
+          scrollEventThrottle={1}
+          scrollForExtraHeightOnAndroid={[Function]}
+          scrollIntoView={[Function]}
+          scrollToEnd={[Function]}
+          scrollToFocusedInput={[Function]}
+          scrollToPosition={[Function]}
+          showsVerticalScrollIndicator={true}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "flex": 1,
+            }
+          }
+          update={[Function]}
+          viewIsInsideTabBar={false}
+        >
+          <View>
+            <View
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRadius": undefined,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": undefined,
+                  "flexDirection": null,
+                  "marginLeft": 2,
+                  "minHeight": 65,
+                  "opacity": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "alignSelf": "flex-start",
+                    "color": "#575757",
+                    "fontSize": 15,
+                    "left": null,
+                    "paddingRight": 5,
+                    "paddingTop": 5,
+                    "position": null,
+                    "right": null,
+                    "top": null,
+                  }
+                }
+              >
+                Email
+              </Text>
+              <TextInput
+                allowFontScaling={true}
+                editable={true}
+                name="email"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onChangeText={[Function]}
+                placeholderTextColor="#575757"
+                rejectResponderTermination={true}
+                style={
+                  Object {
+                    "alignSelf": "stretch",
+                    "color": "#000",
+                    "flex": 1,
+                    "fontSize": 17,
+                    "height": 50,
+                    "lineHeight": 18,
+                    "paddingLeft": 5,
+                    "paddingRight": 5,
+                    "top": 1.5,
+                    "width": null,
+                  }
+                }
+                underlineColorAndroid="rgba(0,0,0,0)"
+                value="foo"
+              />
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  },
+                  Object {
+                    "color": "red",
+                    "height": 20,
+                  },
+                ]
+              }
+              uppercase={false}
+            />
+          </View>
+        </RCTScrollView>
+        <RCTScrollView
+          automaticallyAdjustContentInsets={false}
+          contentContainerStyle={
+            Array [
+              Object {
+                "padding": undefined,
+              },
+              undefined,
+            ]
+          }
+          contentInset={
+            Object {
+              "bottom": 0,
+            }
+          }
+          enableAutomaticScroll={true}
+          enableOnAndroid={false}
+          enableResetScrollToCoords={true}
+          extraHeight={75}
+          extraScrollHeight={0}
+          getScrollResponder={[Function]}
+          handleOnScroll={[Function]}
+          keyboardDismissMode="interactive"
+          keyboardOpeningTime={250}
+          keyboardShouldPersistTaps="handled"
+          keyboardSpace={0}
+          onScroll={[Function]}
+          resetKeyboardSpace={[Function]}
+          resetScrollToCoords={
+            Object {
+              "x": 0,
+              "y": 0,
+            }
+          }
+          scrollEventThrottle={1}
+          scrollForExtraHeightOnAndroid={[Function]}
+          scrollIntoView={[Function]}
+          scrollToEnd={[Function]}
+          scrollToFocusedInput={[Function]}
+          scrollToPosition={[Function]}
+          showsVerticalScrollIndicator={true}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "flex": 1,
+            }
+          }
+          update={[Function]}
+          viewIsInsideTabBar={false}
+        >
+          <View>
+            <View
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRadius": undefined,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": undefined,
+                  "flexDirection": null,
+                  "marginLeft": 2,
+                  "minHeight": 65,
+                  "opacity": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "alignSelf": "flex-start",
+                    "color": "#575757",
+                    "fontSize": 15,
+                    "left": null,
+                    "paddingRight": 5,
+                    "paddingTop": 5,
+                    "position": null,
+                    "right": null,
+                    "top": null,
+                  }
+                }
+              >
+                Password
+              </Text>
+              <TextInput
+                allowFontScaling={true}
+                editable={true}
+                name="password"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onChangeText={[Function]}
+                placeholderTextColor="#575757"
+                rejectResponderTermination={true}
+                secureTextEntry={true}
+                style={
+                  Object {
+                    "alignSelf": "stretch",
+                    "color": "#000",
+                    "flex": 1,
+                    "fontSize": 17,
+                    "height": 50,
+                    "lineHeight": 18,
+                    "paddingLeft": 5,
+                    "paddingRight": 5,
+                    "top": 1.5,
+                    "width": null,
+                  }
+                }
+                underlineColorAndroid="rgba(0,0,0,0)"
+                value="bar"
+              />
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  },
+                  Object {
+                    "color": "red",
+                    "height": 20,
+                  },
+                ]
+              }
+              uppercase={false}
+            />
+          </View>
+        </RCTScrollView>
+        <View
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#b5b5b5",
+              "borderBottomWidth": null,
+              "borderColor": "#007aff",
+              "borderLeftWidth": null,
+              "borderRadius": 5,
+              "borderRightWidth": null,
+              "borderTopWidth": null,
+              "borderWidth": undefined,
+              "elevation": 2,
+              "flexDirection": "row",
+              "height": 45,
+              "justifyContent": "center",
+              "marginVertical": 10,
+              "opacity": 1,
+              "paddingBottom": 6,
+              "paddingTop": 6,
+              "shadowColor": undefined,
+              "shadowOffset": undefined,
+              "shadowOpacity": undefined,
+              "shadowRadius": undefined,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#fff",
+                "fontFamily": "System",
+                "fontSize": 16.5,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+              }
+            }
+            uppercase={false}
+          >
+            Submitting...
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

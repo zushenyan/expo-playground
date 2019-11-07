@@ -1,1 +1,1 @@
-export { default } from "./UserLisnt.component";
+export { default } from "./UserList.component";

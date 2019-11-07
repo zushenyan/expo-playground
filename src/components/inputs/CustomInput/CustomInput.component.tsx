@@ -20,8 +20,13 @@ const CustomInput: React.FC<Props> = ({
         <Input
           {...field}
           {...props}
-          onChangeText={form.handleChange(field.name)}
-          onBlur={form.handleBlur(field.name)}
+          onChangeText={(v): void => {
+            form.setFieldValue(field.name, v);
+            form.setFieldTouched(field.name, true);
+          }}
+          onBlur={(): void => {
+            form.setFieldTouched(field.name, true);
+          }}
         />
       </Item>
       <Text style={{ color: "red", height: 20 }}>

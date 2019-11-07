@@ -1,10 +1,10 @@
 import { createSlice, PayloadAction } from "redux-starter-kit";
 
-export interface State {
+export type State = {
   isLoading: boolean;
-}
+};
 
-export const initialState = {
+export const initialState: State = {
   isLoading: false
 };
 

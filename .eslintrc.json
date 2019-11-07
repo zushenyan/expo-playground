@@ -4,7 +4,8 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:jest/recommended"
   ],
   "overrides": [
     {
@@ -13,5 +14,8 @@
         "react/prop-types": "off"
       }
     }
-  ]
+  ],
+  "rules": {
+    "jest/expect-expect": "off"
+  }
 }

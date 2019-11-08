@@ -1,5 +1,9 @@
 # expo-playgournd
 
+<p align="center">
+  <img src="https://github.com/zushenyan/expo-playground/blob/master/demo.gif">
+</p>
+
 This is a practice project for playing around with the `react-native`.
 
 # Commands

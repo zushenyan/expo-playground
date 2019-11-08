@@ -14,7 +14,8 @@ This is a practice project for playing around with the `react-native`.
 
 # Tools
 
-- `expo` - one of the boilerplates & platform for `react-native`
+- `expo` - one of the boilerplates & platform for `react-native`.
+- `native-base` - an out-of-the-box UI library for `react-native`.
 - `formik` - a form library for React.
 - `redux-starter-kit` - a UI state management tool for lazy person coming from `redux`.
 - `redux-saga` - a flow control library for enhancing the redux.

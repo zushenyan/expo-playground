@@ -8,7 +8,7 @@ This is a practice project for playing around with the `react-native`.
 
 # What does this app do
 Just some basic features:
-- app navigation
+- navigation
 - sign-in form
 - a dashboard with user data fetching from [randomuser.me](https://randomuser.me/)
 
